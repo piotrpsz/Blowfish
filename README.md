@@ -1,6 +1,6 @@
 # Blowfish
 
-Implementation of the Blowfish encryption algorithm (the creator of the algorithm is Bruce Scheiner).
+Implementation of the Blowfish encryption algorithm (the creator of the algorithm is Bruce Schneier).
 It must be clear that the code is not tuned for speed - main goal is explanation how works the algorithm.
 
 To test the correctness of the operation, run the following program:
