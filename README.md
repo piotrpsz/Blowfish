@@ -12,9 +12,9 @@ func main () {
 
     L: = uint32 (1)
     R: = uint32 (2)
-    bf: = blowfish.New ([] byte ("TESTKEY"))
+    bf: = blowfish.New([]byte("TESTKEY"))
 
-    bf.Encrypt (& L, & R)
+    bf.Encrypt (&L, &R)
     fmt.Printf ("%08x, %08x\n", L, R)
 
     if (L == 0xdf333fd2 && R == 0x30a71bb4) {
@@ -23,7 +23,7 @@ func main () {
         fmt.Println ("Test encryption failed.")
     }
 
-    bf.Decrypt (& L, & R)
+    bf.Decrypt (&L, &R)
     if (L == 1 && R == 2) {
         fmt.Println ("Test decryption OK.")
     } else {
