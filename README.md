@@ -15,7 +15,7 @@ func main () {
     bf: = blowfish.New ([] byte ("TESTKEY"))
 
     bf.Encrypt (& L, & R)
-    fmt.Printf ("% 08x,% 08x \ n", L, R)
+    fmt.Printf ("%08x, %08x\n", L, R)
 
     if (L == 0xdf333fd2 && R == 0x30a71bb4) {
         fmt.Println ("Test encryption OK.")
